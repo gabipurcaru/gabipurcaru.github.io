@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of css reset */
+
+td {
+	padding-right: 20px;
+}
+
+a {
+	color: #183525;
+	text-decoration: none;
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+}
+a:hover {
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+}
+body {
+	font-size: 1em;
+	background-color: white;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+h2, h3 {
+	margin-top: 0.8em;
+	margin-bottom: -0.1em;
+	font-weight: 600;
+}
+h1 {
+	font-size: 1.9em;
+	margin-top: 0.3em;
+	margin-bottom: -0.1em;
+	font-weight: 600;
+}
+h2 {
+	font-size: 1.4em;
+	margin-top: 20px;
+	margin-bottom: 7px;
+}
+
+header {
+	background-color: #2d836f;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+header .content, main .content {
+	max-width: 920px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+header .logo {
+	color: white;
+	font-family: sans-serif;
+	font-size: 4em;
+	margin-bottom: 10px;
+}
+header .logo .name {
+	margin-left: -10px;
+	-moz-animation-duration: 0.2s;
+	-moz-animation-name: hover-logo-out;
+	-webkit-animation-duration: 0.2s;
+	-webkit-animation-name: hover-logo-out;
+}
+header .logo .name:hover {
+	cursor: default;
+
+	-moz-animation-duration: 0.2s;
+	-moz-animation-name: hover-logo;
+	-webkit-animation-duration: 0.2s;
+	-webkit-animation-name: hover-logo;
+	color: white;
+	text-shadow: 0 0 5px black;
+}
+header .logo .aside {
+	font-size: 0.7em;
+	opacity: 0.1;
+	cursor: default;
+}
+header .logo a {
+	border: none;
+}
+header ul.skills, header ul.links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: #0a050e;
+	font-weight: 100;
+}
+header ul.skills li {
+	display: inline-block;
+	font-size: 1.7em;
+	font-family: sans-serif;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	cursor: default;
+}
+header ul.skills a, header ul.links a {
+	color: #cccccc;
+	border: none;
+	font-weight: 600;
+}
+header ul.links li {
+	display: inline-block;
+	font-size: 1.5em;
+	font-family: sans-serif;
+	margin-right: 20px;
+	cursor: pointer;
+}
+header ul.skills .label {
+	padding-right: 3px;
+	padding-left: 3px;
+	border-radius: 3px;
+}
+header ul.skills ul.sublist {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: #0a050e;
+	font-weight: 100;
+	font-size: 0.5em;
+	margin-left: 10px;
+	margin-right: -20px;
+	overflow: hidden;
+	position: absolute;
+	background-color: #2d8f79;
+	margin-left: -10px;
+
+	-moz-animation-duration: 0.2s;
+	-moz-animation-name: hide-sublist;
+	-webkit-animation-duration: 0.2s;
+	-webkit-animation-name: hide-sublist;
+}
+header ul.skills ul.sublist li.own:after {
+	content: "open source";
+	color: white;
+	opacity: 0.8;
+	font-size: 0.5em;
+	display: block;
+}
+header ul.skills ul.sublist li {
+	display: block;
+	padding: 13px 20px;
+	margin: 0;
+}
+header ul.skills li:hover ul.sublist {
+	display: block;
+	-moz-animation-duration: 0.2s;
+	-moz-animation-name: display-sublist;
+	-webkit-animation-duration: 0.2s;
+	-webkit-animation-name: display-sublist;
+}
+main.resume {
+	font-size: 1.2em;
+	background-color: #fafafa;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+main {
+	margin-top: 1.8em;
+	line-height: 1.9em;
+	font-family: Verdana;
+	font-size: 1.7em;
+	font-weight: 100;
+}
+footer {
+	margin: 0 auto;
+	display: table;
+	margin-top: 0.8em;
+	margin-bottom: 2em;
+}
+footer:after {
+	content: "❋";
+	margin: 0 auto;
+}
+.drawing {
+	display: inline-block;
+	margin-right: 20px;
+	opacity: 0.8;
+	image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering:   -o-pixelated;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+.right {
+	position: absolute;
+	right: 0;
+	width: 0.4em;
+	height: 100%;
+}
+dt {
+	font-weight: 400;
+}
+dd {
+	margin-left: 2em;
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+.role {
+	font-weight: bolder;
+}
+button.schedule {
+	font-size: 1em;
+	padding: 0.5em;
+	margin-top: 1em;
+}
+.picker {
+	font-size: 0.8em;
+	height: 22em;
+}
+.hero {
+	font-size: 0.9em;
+	font-weight: 500;
+	line-height: 1.5em;
+	/*padding: 0 2em;*/
+}
+.center {
+	text-align: center;
+}
+
+@-moz-keyframes hover-logo {
+	from {
+		color: white;
+		text-shadow: 0 0 0 black;
+	}
+	to {
+		color: white;
+		text-shadow: 0 0 5px black;
+	}
+}
+@-webkit-keyframes hover-logo {
+	from {
+		color: white;
+		text-shadow: 0 0 0 black;
+	}
+	to {
+		color: white;
+		text-shadow: 0 0 5px black;
+	}
+}
+@-moz-keyframes hover-logo-out {
+	from {
+		color: white;
+		text-shadow: 0 0 5px black;
+	}
+	to {
+		color: white;
+		text-shadow: 0 0 0 black;
+	}
+}
+@-webkit-keyframes hover-logo-out {
+	from {
+		color: white;
+		text-shadow: 0 0 5px black;
+	}
+	to {
+		color: white;
+		text-shadow: 0 0 0 black;
+	}
+}
+@-moz-keyframes display-sublist {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes display-sublist {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
