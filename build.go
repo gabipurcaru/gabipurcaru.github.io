@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	indexBytes, err := ioutil.ReadFile("index.html")
+	indexBytes, err := ioutil.ReadFile("template.html")
 	if err != nil {
 		panic(err)
 	}
@@ -68,5 +68,5 @@ func main() {
 		1,
 	)
 
-	ioutil.WriteFile("bundle.html", []byte(minifiedBundle), 0660)
+	ioutil.WriteFile("index.html", []byte(minifiedBundle), 0660)
 }

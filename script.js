@@ -35,8 +35,6 @@ document.body.onload = function() {
 		var hover_interval = 20;
 		var is_hovering = false;
 
-
-
 		for(var i=0; i * block_size < height; i++) {
 			for(var j=0; j < num_blocks; j++) {
 				context.fillStyle = random_color();
