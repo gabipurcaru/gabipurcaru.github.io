@@ -5,6 +5,7 @@
         <meta name=viewport content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#2d836f">
         <link href="/favicon.ico" rel="icon" type="images/png" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
         <title>Gabi Purcaru</title>
     </head>
     <body>
@@ -14,41 +15,133 @@
                 <h1 class="logo">
                     <canvas class="drawing"></canvas>
                     <span class="name">Gabi Purcaru</span>
-                    <span class="aside">developer</span>
+                    <span class="aside">software engineer</span>
                 </h1>
                 <ul class="links">
-                    <li><a href="https://github.com/gabipurcaru/">Github</a></li>
+                    <li><a href="https://github.com/gabipurcaru/">GitHub</a></li>
                     <li><a href="https://medium.com/@gabipurcaru/">Blog</a></li>
                     <li><a href="https://stackoverflow.com/users/376873/gabi-purcaru">Stack Overflow</a></li>
                 </ul>
             </div>
         </header>
-        <main>
+        <main class="intro">
             <div class="content">
                 <p class="hero">
-                    I've started my software engineering career quickly
-                    jumping from small oddball projects to medium-sized ones, and then
-                    a larger project where I've created most of the <strong>Cinely</strong> website, both
-                    back and front end, learning about Django, jQuery and MySQL in the
-                    process.
-                    Then I've moved on to interning at <strong>Facebook</strong> for my first time,
-                    where I've prototyped changing Facebook's massive data bus' underlying
-                    filesystem to GlusterFS.
-                    After that I've joined <strong>2Performant</strong>, where
-                    I've helped create the next version of the affiliate network,
-                    particularly the front-end, using AngularJS.
-                    Afterwards I went back
-                    for my second internship at <strong>Facebook</strong>, where I've
-                    improved LiveRail's performance monitoring.
-
-                    <br/><br/>
-                    Most of this while studying for my BSc. at the University of Bucharest,
-                    maintaining my own open source project, and working on other
-                    small side projects.
-
-                    <br/><br/>
-                    <b style="font-style: italic;">What's next?</b>
+                    I'm a passionate software engineer that takes pride in his work.
+                    Here are some of my personal projects:
                 </p>
+
+                <div class="projects">
+                    <a href="http://www.mule-uploader.com">
+                        <div class="project">
+                            <div class="content">
+                                <div class="name">
+                                    mule uploader
+                                </div>
+                                <div class="details">
+                                    HTML5 resumable uploader for Amazon S3.
+                                    It slices the files in JS, and then it
+                                    uploads them piece by piece. At the end,
+                                    S3 recreates the file from the pieces.
+                                </div>
+                                <div class="footer mule">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.acceleratul.ro/">
+                        <div class="project">
+                            <div class="content">
+                                <div class="name">
+                                    acceleratul.ro
+                                </div>
+                                <div class="details">
+                                    Search platform for the Romanian railways.
+                                    Built with React + ES6, Firebase, Material Design
+                                    and ServiceWorker.
+                                    <br/>
+
+                                    It also features a fancy, custom routing algorithm.
+                                </div>
+                                <div class="footer acceleratul">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.dedo.io/">
+                        <div class="project">
+                            <div class="content">
+                                <div class="name">
+                                    dedo.io
+                                </div>
+                                <div class="details">
+                                    Fancy calculator with unit and currency support.
+                                    A mix between spreadsheets, notepad and a bit of
+                                    Wolfram Alpha.
+                                    <br/>
+
+                                    Implemented with React, Material Design and CodeMirror.
+                                    It features a mini programming language implemented
+                                    in JavaScript with JISON.
+                                </div>
+                                <div class="footer dedo">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="more">
+                      <a href="javascript:void(0);">Show More Projects ▼ </a>
+                    </div>
+
+                    <div class="more-projects">
+                        <a href="http://gabipurcaru.github.io/anticrastinator/">
+                            <div class="project">
+                                <div class="content">
+                                    <div class="name">
+                                        anticrastinator
+                                    </div>
+                                    <div class="details">
+                                        Helps you focus by disabling time-wasting
+                                        websites. Implemented in node.js, it works
+                                        by changing the /etc/hosts file.
+                                    </div>
+                                    <div class="footer anticrastinator">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/bbpcr/Yomato">
+                            <div class="project">
+                                <div class="content">
+                                    <div class="name">
+                                        yomato
+                                    </div>
+                                    <div class="details">
+                                        School project (in a team of 5):
+                                        BitTorrent client implemented in Go.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/gabipurcaru/regex">
+                            <div class="project">
+                                <div class="content">
+                                    <div class="name">
+                                        regex
+                                    </div>
+                                    <div class="details">
+                                        School project: Regular expression
+                                        engine implemented from scratch in Go.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </main>
 
@@ -56,6 +149,13 @@
             <div class="content">
                 <h2>Work Experience</h2>
                 <div>
+                    <div>
+                        March 2017 - onwards
+                        &nbsp;&raquo;&nbsp;
+                        <span class="role">
+                            Software Engineer - Facebook London
+                        </span>
+                    </div>
                     <div>
                         September 2016 - November 2016
                         &nbsp;&raquo;&nbsp;
@@ -116,15 +216,20 @@
                         large file uploads (40GB+).
                     </dd>
 
-                    <dt><a href="https://github.com/bbpcr/Yomato">Yomato</a></dt>
-                    <dd>
-                        BitTorrent client implemented in Go.
-                    </dd>
-
                     <dt><a href="https://www.acceleratul.ro/">Acceleratul</a></dt>
                     <dd>
                         Clean interface for the Romanian train schedule, implemented
                         with React, Material Design, WebPack and HTML5.
+                    </dd>
+
+                    <dt><a href="https://www.dedo.io/">Dedo.io</a></dt>
+                    <dd>
+                        Smart calculator with currency and unit support.
+                    </dd>
+
+                    <dt><a href="https://github.com/bbpcr/Yomato">Yomato</a></dt>
+                    <dd>
+                        BitTorrent client implemented in Go.
                     </dd>
                 </dl>
 
@@ -155,16 +260,12 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>HTML/CSS</td>
-                        <td></td>
-                    </tr>
-                    <tr>
                         <td>C and C++</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>Linux</td>
-                        <td>apache, cron, ssh, bash</td>
+                        <td>apache, cron, ssh, bash, etc.</td>
                     </tr>
                     <tr>
                         <td>Relational Databases</td>
@@ -172,15 +273,7 @@
                     </tr>
                     <tr>
                         <td>Revision Control Tools</td>
-                        <td>Git, Mercurial, Subversion</td>
-                    </tr>
-                    <tr>
-                        <td>AWS</td>
-                        <td>S3, CF, EC2, RDS</td>
-                    </tr>
-                    <tr>
-                        <td>Various APIs</td>
-                        <td>Facebook, YouTube, Twitter, SoundCloud, SendGrid</td>
+                        <td>Git, Mercurial</td>
                     </tr>
                 </table>
             </div>

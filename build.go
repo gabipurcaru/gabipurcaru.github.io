@@ -7,9 +7,11 @@ import (
 	"github.com/tdewolff/minify/js"
 	"io/ioutil"
 	"strings"
+	"fmt"
 )
 
 func main() {
+	fmt.Println("Starting build")
 	indexBytes, err := ioutil.ReadFile("template.html")
 	if err != nil {
 		panic(err)
@@ -69,4 +71,6 @@ func main() {
 	)
 
 	ioutil.WriteFile("index.html", []byte(minifiedBundle), 0660)
+
+	fmt.Println("Done.")
 }

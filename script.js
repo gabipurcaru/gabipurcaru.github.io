@@ -73,4 +73,9 @@ document.body.onload = function() {
 	}
 
 	logo();
+
+	document.getElementsByClassName('more')[0].addEventListener('click', function() {
+		this.style.display = 'none';
+		document.getElementsByClassName('more-projects')[0].style.display = 'block';
+	});
 };
