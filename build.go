@@ -42,7 +42,7 @@ func main() {
 	bundle = strings.Replace(
 		bundle,
 		"<!-- JS -->",
-		"<script>"+jsStr+"</script>",
+		"<script type='text/javascript'>"+jsStr+"</script>",
 		1,
 	)
 
